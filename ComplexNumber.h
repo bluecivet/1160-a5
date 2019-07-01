@@ -1,3 +1,11 @@
+/*
+  this is the header file for the ComplexNumber class 
+  the ComplexNumber have 2 variable the real and the image 
+  real stand for real path and image stand for image path 
+  the class overload some operator and have setting and getter method 
+*/
+
+
 #include<iostream>
 
 #ifndef COMPLEX_H
@@ -44,6 +52,7 @@ public:
 
 };
 
-const ComplexNumber i(0, 1);
+
+const ComplexNumber i(0, 1);  // thhis is a complex number u have 0 for real and 1 for image
 
 #endif

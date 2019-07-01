@@ -1,3 +1,7 @@
+/*
+  this file is the test file for the class ComplexNumber
+*/
+
 #include"ComplexNumber.h"
 #include<iostream>
 
@@ -5,6 +9,8 @@ using namespace std;
 
 int main()
 {
+	// two ComplexNumber operation
+
 	ComplexNumber c1(1, -2);
 	ComplexNumber c2(3, 4);
 	cout << c1 + c2 << endl;
@@ -17,6 +23,7 @@ int main()
 	cout << c2 / 10.0 << endl;
 	cout << 100.0 / c2 << endl;
 	
+	//two ComplexNumber operation but same content
 	cout << endl << "c3 and c4" << endl << endl;
 
 	ComplexNumber c3(5, 6);
@@ -30,8 +37,9 @@ int main()
 	cout << c3 / 1.0 << endl;
 	cout << c4 / 10.0 << endl;
 
-	//cout << c3 / 0 << endl;
+	//cout << c3 / 0 << endl;      // dividing by zero show error
 
+	// try input ComplexNUmber and different constructor
 	cout << endl << "c5 and c6" << endl << endl;
 
 	ComplexNumber c5;
@@ -43,6 +51,7 @@ int main()
 	cin >> c5;
 	cout << c5 << endl;
 
+	// self operation
 	cout << endl << "c7" << endl << endl;
 
 	ComplexNumber c7(0, 2);
