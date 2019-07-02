@@ -43,7 +43,7 @@ public:
 	bool operator ==(const ComplexNumber& c);
 	bool operator !=(const ComplexNumber& c);
 
-	friend ComplexNumber abs(ComplexNumber& c);
+	friend double abs(ComplexNumber& c);
 	friend ComplexNumber operator /(const ComplexNumber& c, const ComplexNumber& o);
 	friend ComplexNumber operator /(const ComplexNumber& complex, const double c);
 	friend std::ostream& operator <<(std::ostream& os, const ComplexNumber& c);

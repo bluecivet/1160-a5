@@ -4,6 +4,7 @@
 
 #include "ComplexNumber.h"
 #include<iostream>
+#include<cmath>
 
 using namespace std;
 
@@ -187,17 +188,13 @@ bool ComplexNumber::operator ==(const ComplexNumber& c)
 ///////////////////////////////////////////////////
 
 /*
-  the function will return a ComplexNumber which a a positive 
+  the function will return a ComplexNumber which is absulute
   c is the ComplexNumber
-  return ComplexNUmber for positive 
+  return ComplexNUmber for absolute
 */
-ComplexNumber abs(ComplexNumber &c)
+double abs(ComplexNumber &c)
 {
-	double cReal, cImage;
-
-	cReal = c.real < 0 ? -c.real : c.real;
-	cImage = c.image < 0 ? -c.image : c.image;
-	ComplexNumber answer(cReal, cImage);
+	double answer = sqrt((c.real * c.real) + (c.image * c.image));
 	return answer;
 }
 

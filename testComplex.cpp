@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	// two ComplexNumber operation
+	// two ComplexNumber operation and absolute
 
 	ComplexNumber c1(1, -2);
 	ComplexNumber c2(3, 4);
@@ -22,6 +22,9 @@ int main()
 	cout << c1 / 1.0 << endl;
 	cout << c2 / 10.0 << endl;
 	cout << 100.0 / c2 << endl;
+	cout << abs(c1) << endl;	// absolute
+	cout << abs(c2) << endl;	// absolute
+
 	
 	//two ComplexNumber operation but same content
 	cout << endl << "c3 and c4" << endl << endl;
@@ -63,7 +66,6 @@ int main()
 	cout << +c7 << endl;
 	cout << -c7 << endl;
 	-c7;
-	cout << abs(-c7) << endl;
 	cout << ++c7 << endl;
 	cout << c7++ << endl;
 	cout << --c7 << endl;
@@ -74,8 +76,9 @@ int main()
 	cout << test + c7-- << endl;
 
 
-	
-
+	string exit;
+	cout << "please enter anything and press enter to exit" << endl;
+	cin >> exit;
 
 	return 0;
 }
